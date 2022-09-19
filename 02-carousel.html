@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>carousel com</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  /* ------------------------ */
+  /* GENERAL STYLES */
+  /* ------------------------ */
+  body {
+    font-family: "Inter", sans-serif;
+    color: #343a40;
+    line-height: 1;
+  }
+
+  .carousel {
+    background-color: #087f5b;
+    width: 800px;
+    margin: 100px auto;
+    border-radius: 8px;
+    padding: 32px;
+    padding-left: 86px;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+  }
+
+  img {
+    height: 200px;
+    transform: scale(1.5);
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .testimonial-job {
+    font-size: 12px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #c3fac8;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #e6fcf5;
+  }
+</style>
+
+<body>
+  <div class="carousel">
+    <img src="maria.jpg" alt="Maria de Almelda" />
+    <blockquote class="testimonial ">
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+        repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
+        recusandae earum debitis doloribus in quasi voluptatibus!
+      </p>
+      <p class="testimonial-author">Maria de Almeida</p>
+      <p class="testimonial-job">Senior Product Manager at EDP commercial</p>
+    </blockquote>
+    <button class="btn">
+      <svg className="chevronleft" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button class="btn">
+      <svg className="chevronright" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</body>
+
+</html>
